@@ -3,15 +3,15 @@ import React from 'react'
 import { assets } from '@/assets/assets'
 
 
-const Footer = () => {
+const Footer = ({isDark}) => {
     const currentYear = new Date().getFullYear();
 
   return (
     <div className='mt-20'>
       <div className='text-center'>
-        <Image src={assets.logo} alt='' className='w-36 mx-auto mb-2' />
+        <Image src={assets.logo} alt='' className='w-36 mx-auto mb-2 bg-white rounded-full' />
         <div className='flex w-max items-center gap-2 mx-auto'>
-            <Image src={assets.mail_icon} alt='' className='w-6'/>
+            <Image src={isDark ?assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6'/>
             stevencaijingheng@gmail.com
         </div>
       </div>
