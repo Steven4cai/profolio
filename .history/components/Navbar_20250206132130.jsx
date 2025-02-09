@@ -57,17 +57,19 @@ const Navbar = ({isDark,setIsDark}) => {
                         <Image src={isDark ? assets.sun_icon : assets.moon_icon} alt='' className='w-6' />
                     </button>
 
-                    <a href='#contact' className='hidden lg:flex items-center gap-3 px-10 py-2.5 
+                    <a href='/contact' className='hidden lg:flex items-center gap-3 px-10 py-2.5 
                     border border-gray-500 rounded-full ml-4 font-Ovo
                     dark:border-white/50'>
                         Contact <Image className='w-3' src={isDark ?assets.arrow_icon_dark :assets.arrow_icon} alt='arrowicon' />
                     </a>
 
+                    {/* Menu Button for Mobile */}
                     <button className='block md:hidden ml-3' onClick={openMenu}>
                         <Image src={isDark ?assets.menu_white :assets.menu_black} alt='' className='w-6' />
                     </button>
                 </div>
 
+                {/* Mobile Menu */}
                 <ul className={`flex flex-col gap-4 py-20 px-10
                 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50
                 transition duration-500' dark:bg-darkHover dark:text-white

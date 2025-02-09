@@ -112,9 +112,8 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Master of Information Technology' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, C++, Python' },
-
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Master of Information Technology' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Developed multiple web applications with modern tech stack | Specializing in frontend & full-stack development' }
 ];
 

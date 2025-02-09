@@ -7,14 +7,14 @@ const Footer = ({ isDark }) => {
   const currentYear = new Date().getFullYear();
 
   return (
-
+    <div className='mt-20'>
 
      
 
       <div className='text-center border-t border-gray-400 mx-[10%] mt-12 py-6'>
         <p>&copy; {currentYear} Steven Cai. All rights reserved.</p>
       </div>
-
+    </div>
   )
 }
 

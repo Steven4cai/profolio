@@ -2,9 +2,6 @@
 import { assets } from '@/assets/assets'
 import React,{ useState } from 'react'
 import Image from 'next/image'
-import { FaPhoneAlt,FaMailBulk } from "react-icons/fa";
-import Link from 'next/link';
-import { AiFillLinkedin } from "react-icons/ai";
 const Contact = () => {
 
     const [result, setResult] = React.useState("");
@@ -66,7 +63,6 @@ const Contact = () => {
             </button>
 
             <p className='mt-4'>{result}</p>
-            <div className='mt-20'>
             <div className='flex justify-center gap-10 items-center text-center'>
       <Link href="mailto:stevencaijingheng@gmail.com">
         <div className='flex items-center gap-2'>
@@ -86,7 +82,6 @@ const Contact = () => {
           <FaPhoneAlt className='text-green-600 text-lg' />
           <span className="text-gray-700 dark:text-white">0424 807 363</span>
         </div>
-      </div>
       </div>
         </form>
     </div>
