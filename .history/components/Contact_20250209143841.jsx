@@ -67,30 +67,26 @@ const Contact = () => {
 
             <p className='mt-4'>{result}</p>
             <div className='mt-20'>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center my-10">
-  {/* 📧 邮件 */}
-  <Link href="mailto:stevencaijingheng@gmail.com">
-    <div className="flex items-center gap-2 cursor-pointer hover:text-blue-500 transition">
-      <FaMailBulk className="text-xl text-gray-700 dark:text-white" />
-      <span className="text-gray-700 dark:text-white">stevencaijingheng@gmail.com</span>
-    </div>
-  </Link>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10'>
+      <Link href="mailto:stevencaijingheng@gmail.com">
+        <div className='flex items-center gap-2'>
+          <FaMailBulk className='w-6' />
+          <span className="text-gray-700 dark:text-white">stevencaijingheng@gmail.com</span>
+        </div>
+      </Link>
 
-  {/* 🔗 LinkedIn */}
-  <Link href="https://www.linkedin.com/in/stevencai1" target="_blank" rel="noopener noreferrer">
-    <div className="flex items-center gap-2 cursor-pointer hover:text-blue-500 transition">
-      <AiFillLinkedin className="text-blue-700 dark:text-blue-400 text-xl" />
-      <span className="text-gray-700 dark:text-white">LinkedIn Profile</span>
-    </div>
-  </Link>
+        <Link href="https://www.linkedin.com/in/stevencai1" target="_blank" rel="noopener noreferrer">
+          <div className='flex items-center gap-2 cursor-pointer hover:text-blue-500 transition'>
+            <AiFillLinkedin className='text-blue-700 dark:text-blue-400 text-xl' />
+            <span className="text-gray-700 dark:text-white">LinkedIn Profile</span>
+          </div>
+        </Link>
 
-  {/* 📞 电话 */}
-  <div className="flex items-center gap-2">
-    <FaPhoneAlt className="text-green-600 text-lg" />
-    <span className="text-gray-700 dark:text-white">0424 807 363</span>
-  </div>
-</div>
-
+        <div className='flex items-center gap-2'>
+          <FaPhoneAlt className='text-green-600 text-lg' />
+          <span className="text-gray-700 dark:text-white">0424 807 363</span>
+        </div>
+      </div>
       </div>
         </form>
     </div>
