@@ -21,12 +21,12 @@ const Work = ({ isDark }) => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10">
   {workData.map((work, index) => (
-    <Link href={work.website} target="_blank"  key={index}>
     <div
+      key={index}
       className="flex flex-col bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden group cursor-pointer"
     >
       <div
-        className="h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105 mb-4"
+        className="h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
         style={{ backgroundImage: `url(${work.bgImage})` }}
       ></div>
 
@@ -59,7 +59,6 @@ const Work = ({ isDark }) => {
         </div>
       </div>
     </div>
-    </Link>
   ))}
 </div>
 

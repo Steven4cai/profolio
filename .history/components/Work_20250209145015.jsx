@@ -23,6 +23,7 @@ const Work = ({ isDark }) => {
   {workData.map((work, index) => (
     <Link href={work.website} target="_blank"  key={index}>
     <div
+     
       className="flex flex-col bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden group cursor-pointer"
     >
       <div
