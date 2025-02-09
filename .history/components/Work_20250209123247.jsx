@@ -12,11 +12,9 @@ const Work = ({ isDark }) => {
       <h2 className="text-center text-5xl font-Ovo">My Latest Works</h2>
 
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-      Here are some of my recent projects, showcasing my expertise in web
-       development, full-stack solutions, and API integration. These projects
-        demonstrate my ability to build scalable, high-performance applications
-         with intuitive user experiences, modern design principles, and secure 
-         architecture.
+        Web developer with a strong foundation in software engineering,
+        specializing in building efficient, scalable, and user-friendly
+        applications.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10">
