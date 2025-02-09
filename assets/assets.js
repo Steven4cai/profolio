@@ -78,38 +78,43 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        id: '1',
+       title: 'Property Pulse',
+        description: 'Property Pulse is a full-stack real estate platform built with Next.js, MongoDB, and Tailwind CSS. It allows users to list, search, and manage properties with features like NextAuth Google authentication, Cloudinary image uploads, real-time availability tracking, and internal messaging for seamless communication.',
+        bgImage: '/propertypulse.jpg',
+        website:'https://propertypulse-rosy-eight.vercel.app/',
+        github:'https://github.com/Steven4cai/propertypulse'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        id: '2',
+        title: 'BookIt – Room Booking System',
+        description: 'ookIt is a meeting room booking system built with Next.js, Appwrite, and Tailwind CSS. Users can list, edit, and manage rooms with features like built-in authentication, Appwrite database, real-time availability tracking, and booking validation to prevent double booking.',
+        bgImage: '/bookit.png',
+        website:'https://bookit-sandy.vercel.app/',
+        github:'https://github.com/Steven4cai/bookit'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        id: '3',
+        title: 'Github Finder',
+        description: 'GitHub User Finder is a React-based web app built with React, GitHub REST API, and Tailwind CSS. Users can search GitHub profiles and explore repositories with features like real-time API fetching, user statistics, repository insights, and a responsive UI for an optimized browsing experience.',
         bgImage: '/work-3.png',
+        website:'https://github-finder-one-sepia.vercel.app/',
+        github:'https://github.com/Steven4cai/github-finder'
     },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
+
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Frontend Development', description: 'Building modern, responsive, and interactive web applications using React.js, Next.js, and Tailwind CSS to ensure seamless user experience.', link: '' },
+    { icon: assets.mobile_icon, title: 'Full-Stack Development', description: 'Developing scalable web applications with Next.js, Appwrite, MongoDB, and Firebase, handling both frontend and backend efficiently.', link: '' },
+    { icon: assets.ui_icon, title: 'API Development & Integration', description: 'Creating and integrating RESTful APIs to enable smooth data communication between systems, ensuring high performance and security.', link: '' },
+    { icon: assets.graphics_icon, title: 'Authentication & Security', description: 'Implementing secure authentication using NextAuth.js, OAuth, JWT, and Firebase Auth, ensuring data protection and user privacy.', link: '' },
 ]
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, C++, Python' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Master of Information Technology' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Developed multiple web applications with modern tech stack | Specializing in frontend & full-stack development' }
 ];
 
 export const toolsData = [

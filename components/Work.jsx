@@ -1,45 +1,62 @@
-import { assets, workData } from '@/assets/assets'
-import React from 'react'
-import Image from 'next/image'
+import { assets, workData } from '@/assets/assets';
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { BsGithub } from 'react-icons/bs';
+import { CgWebsite } from 'react-icons/cg';
 
-const Work = ({isDark}) => {
+const Work = ({ isDark }) => {
   return (
-    <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h4 className='text-center mb-2 text-lg font-Ovo'>My portfolio</h4>
-        <h2 className='text-center text-5xl font-Ovo'>My Latest Works</h2>
+    <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 className="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
+      <h2 className="text-center text-5xl font-Ovo">My Latest Works</h2>
 
-        <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-         Web developer with a strong foundation in software engineering,
-           specializing in building efficient, scalable, and user-friendly
-            applications.
-         </p>
+      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+        Web developer with a strong foundation in software engineering,
+        specializing in building efficient, scalable, and user-friendly
+        applications.
+      </p>
 
-         <div className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
-            {workData.map((work,index) => (
-                <div key={index}
-                className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
-                style={{backgroundImage: `url(${work.bgImage})`}}>
-                    <div className='bg-white w-10/12 rounded-md absolute bottom-5 
-                    left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500
-                    group-hover:bottom-7'>
-                        <div>
-                            <h2 className='font-semibold'>{work.title}</h2>
-                            <p className='text-sm text-gray-700'>{work.description}</p>
-                        </div>
-                        <div className = 'border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                            <Image src={assets.send_icon} alt='send icon' className='w-5'/>
-                        </div>
-                    </div>
-                </div>
-            ))}
-         </div>
-         <a href=""
-         className='w-max flex items-center gap-2 text-gray-700 border-[0.5px] rounded-full py-3 px-10 mx-auto my-20
-         hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'
-         >Show More <Image src={isDark ?assets.right_arrow_bold_dark :assets.right_arrow_bold} alt='right arrow' className='w-4'/></a>
-      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10">
+        {workData.map((work, index) => (
+          <div
+            key={index}
+            className="flex flex-col bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden"
+          >
+            <div
+              className="h-64 bg-cover bg-center"
+              style={{ backgroundImage: `url(${work.bgImage})` }}
+            ></div>
+
+            <div className="p-5 w-full flex flex-col flex-grow">
+              <h2 className="font-semibold text-lg dark:text-white text-center">
+                {work.title}
+              </h2>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2 text-justify flex-grow">
+                {work.description}
+              </p>
+
+              <div className="mt-4 flex justify-between items-center">
+                <Link href={work.website}
+                  target="_blank"
+                  className="flex items-center gap-2 text-sm text-gray-800 dark:text-white hover:text-blue-500"
+                >
+                  <CgWebsite className="text-xl" /> Live Demo
+                </Link>
+
+                <Link href={work.github}
+                  target="_blank"
+                  className="flex items-center gap-2 text-sm text-gray-800 dark:text-white hover:text-gray-600"
+                >
+                  <BsGithub className="text-xl" /> GitHub
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
