@@ -1,25 +1,4 @@
-import { assets, workData } from '@/assets/assets';
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { BsGithub } from 'react-icons/bs';
-import { CgWebsite } from 'react-icons/cg';
-
-const Work = ({ isDark }) => {
-  return (
-    <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
-      <h2 className="text-center text-5xl font-Ovo">My Latest Works</h2>
-
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-      Here are some of my recent projects, showcasing my expertise in web
-       development, full-stack solutions, and API integration. These projects
-        demonstrate my ability to build scalable, high-performance applications
-         with intuitive user experiences, modern design principles, and secure 
-         architecture.
-      </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10">
   {workData.map((work, index) => (
     <div
       key={index}
@@ -64,9 +43,3 @@ const Work = ({ isDark }) => {
     </div>
   ))}
 </div>
-
-    </div>
-  );
-};
-
-export default Work;
